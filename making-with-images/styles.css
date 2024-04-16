@@ -1,0 +1,218 @@
+
+body {
+    background-color: black;
+    background-image: url(screen.png.png);
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-attachment: fixed;
+    background-position-x: center;
+}
+
+
+img {
+    width: 100%;
+}
+
+
+div.box {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+div.random {
+    transition: 0.7s;
+}
+
+
+div.layout{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+div.box.a {
+    width:10%;
+}
+
+
+div.box.b {
+    width:15%;
+}
+
+
+div.box.c {
+    width:25%;
+}
+
+
+div.box.one {
+    opacity:10%;
+}
+
+
+div.box.two {
+    opacity: 75%;
+}
+
+
+div.box.three {
+    opacity:100%
+}
+
+div.box.x {
+    filter: blur(4px);
+}
+
+
+div.box.y {
+    filter: contrast(200%);
+}
+
+
+div.box.z {
+   
+}
+
+
+
+.scale {
+    transform: scale(1.2);
+}
+
+
+.scale2 {
+    transform: scale(1.2) translateX(10%);
+}
+
+
+.scale3 {
+    transform: scale(1.2) translateX(-10%);
+}
+
+
+.rotate {
+    transform: rotate(360deg);
+}
+
+
+.translate1 {
+    transform: translateX(100%);
+}
+
+
+.translate2 {
+    transform: translateY(100%);
+}
+
+
+.translate3 {
+    transform: translateX(-100%);
+}
+
+
+.translate4 {
+    transform: translateY(-100%);
+}
+
+
+.translate5 {
+    transform: translate(100%, 100%);
+}
+
+
+.translate6 {
+    transform: translate(-100%, -100%);
+}
+
+
+.translate7 {
+    transform: translate(-100%, 100%);
+}
+
+
+.translate8 {
+    transform: translate(100%, -100%);
+}
+
+
+.grayscale-element {
+  filter: grayscale(1);
+}
+
+
+.blur-element {
+  filter: blur(5px);
+}
+
+
+.brighter-element {
+  filter: brightness(120%);
+}
+
+
+.high-contrast-element {
+  filter: contrast(150%);
+}
+
+
+.drop-shadow-element {
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+}
+
+
+.hue-rotated-element {
+  filter: hue-rotate(90deg);
+}
+
+
+.inverted-element {
+  filter: invert(1);
+}
+
+
+.semitransparent-element {
+  filter: opacity(0.7);
+}
+
+
+.desaturated-element {
+  filter: saturate(50%);
+}
+
+
+.multi-filter-element {
+  filter: grayscale(50%) sepia(50%) brightness(150%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

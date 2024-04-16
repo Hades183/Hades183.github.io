@@ -1,0 +1,670 @@
+
+body {
+    background-color: #808080;
+    /* margin: 0; */
+    /* padding: 0; */
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    height: 100%;
+}
+
+.color-box {
+    background-color: #92D2EB;
+
+    width: 800px;
+
+    height: 1128px;
+
+
+    margin: 0 auto;
+
+    overflow: hidden;
+
+
+    position: relative;
+}
+
+
+
+@font-face {
+    font-family: 'TribaliumNeue-Regular';
+    src: url('fonts/TribaliumNeue-Regular.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'TribaliumNeue-Poster';
+    src: url('fonts/TribaliumNeue-Poster.woff') format('woff');
+}
+
+
+:root {
+    --left-gap: 40px;
+    --right-gap: 40px;
+    --height-gap: 100px;
+}
+
+/* .bottom {
+    float: bottom;
+} */
+
+/* for text: IDentity */
+.ti1 {
+
+    font-family: 'TribaliumNeue-Poster';
+    font-weight: 600;
+
+
+    font-size: 25pt;
+
+
+    letter-spacing: 0.1em;
+
+
+    color: black;
+
+
+    text-align: center;
+
+
+    position: relative;
+
+
+    top: 25px;
+}
+
+
+.ti2 {
+
+    font-family: 'Berlin Sans FB';
+
+
+    font-size: 25pt;
+
+
+    color: black;
+
+    text-align: left;
+
+
+    position: absolute;
+
+
+    top: 70px;
+    left: var(--left-gap);
+}
+
+
+.ti3 {
+
+    font-family: 'Berlin Sans FB';
+    font-weight: 600;
+
+
+    font-size: 50pt;
+
+
+    letter-spacing: 0.2em;
+
+
+    color: black;
+
+
+    text-align: left;
+
+
+    position: absolute;
+
+
+    top: 180px;
+    left: var(--left-gap);
+}
+
+/* for text: TOUCHED */
+.ti4 {
+
+    font-family: 'Berlin Sans FB';
+    font-weight: 600;
+
+
+    font-size: 50pt;
+
+
+    letter-spacing: 0.2em;
+
+
+    color: black;
+
+
+    position: absolute;
+
+
+    position: absolute;
+
+
+    top: 250px;
+    left: var(--left-gap);
+
+
+    opacity: 0;
+}
+
+.container {
+
+    position: absolute;
+
+    width: 100%;
+    top: 380px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+
+.ti5 {
+
+    font-family: 'Berlin Sans FB';
+
+
+    font-size: 25pt;
+
+
+    color: black;
+
+
+    text-align: left;
+
+
+    position: relative;
+
+
+    top: 0px;
+    left: var(--left-gap);
+}
+
+.scroll-container {
+    border-radius: 5px;
+    overflow: hidden;
+    width: 150%;
+    height: 500px;
+    margin: 0rem 0rem;
+}
+
+.ti5 {
+    /* transform: translateX(100%); */
+    animation: scroll-animation 15s linear infinite;
+}
+
+@keyframes scroll-animation {
+    from {
+        -webkit-transform: translateY(-100%);
+    }
+
+    to {
+        -webkit-transform: translateY(100%);
+    }
+}
+
+/* for text: SECRET */
+.ti6 {
+
+    font-family: 'TribaliumNeue-Poster';
+    font-weight: 600;
+
+
+    font-size: 25pt;
+
+
+    letter-spacing: 0.1em;
+
+
+    color: white;
+
+
+    text-align: right;
+
+
+    position: relative;
+
+
+    top: 0px;
+    right: var(--right-gap);
+}
+
+/* for text: UNLOCK */
+.ti7 {
+
+    font-family: 'TribaliumNeue-Poster';
+    font-weight: 600;
+
+
+    font-size: 25pt;
+
+
+    letter-spacing: 0.1em;
+
+
+    color: white;
+
+
+    text-align: right;
+
+
+    position: relative;
+
+
+    top: 100px;
+    right: var(--right-gap);
+}
+
+/* for text: CONVENIENT */
+.ti8 {
+
+    font-family: 'TribaliumNeue-Poster';
+    font-weight: 600;
+
+
+    font-size: 25pt;
+
+
+    letter-spacing: 0.1em;
+
+    color: white;
+
+
+    text-align: right;
+
+    position: relative;
+
+
+    top: 200px;
+    right: var(--right-gap);
+}
+
+/* for text: SECURITY */
+.ti9 {
+
+    font-family: 'TribaliumNeue-Poster';
+    font-weight: 600;
+
+
+    font-size: 25pt;
+
+
+    letter-spacing: 0.1em;
+
+
+    color: white;
+
+
+    text-align: right;
+
+
+    position: relative;
+
+
+    top: 300px;
+    right: var(--right-gap);
+}
+
+/* for text: KEY */
+.ti10 {
+
+    font-family: 'TribaliumNeue-Poster';
+    font-weight: 600;
+
+
+    font-size: 25pt;
+
+
+    letter-spacing: 0.1em;
+
+
+    color: black;
+
+
+    text-align: center;
+
+
+    position: absolute;
+
+
+    bottom: 30px;
+
+    left: 50%;
+
+
+    transform: translateX(-50%);
+
+}
+
+
+
+
+
+
+
+
+
+
+/* 定义颜色循环动画 keyframes */
+@keyframes color-cycle {
+
+    0%,
+    33.33% {
+        background-color: #92D2EB;
+        /* 颜色1 */
+    }
+
+    33.33%,
+    66.66% {
+        background-color: #F4DF62;
+        /* 颜色2 */
+    }
+
+    66.66%,
+    100% {
+        background-color: #D468A4;
+        /* 颜色3 */
+    }
+}
+
+/* 应用动画到 .color-box */
+.color-box {
+    animation: color-cycle 6s steps(1, end) infinite;
+}
+
+
+/* 定义动画关键帧 */
+@keyframes ti1-animation {
+
+    0%,
+    33.33% {
+        /* 阶段1：从0秒到2秒 */
+        font-size: 25pt;
+        color: black;
+        opacity: 1;
+    }
+
+    33.33%,
+    66.66% {
+        /* 阶段2：从2秒到4秒 */
+        font-size: 92pt;
+        color: white;
+        opacity: 1;
+    }
+
+    66.66%,
+    99.99% {
+        /* 阶段3：从4秒到6秒 */
+        /* font-size: 25pt; */
+        opacity: 0;
+        /* color: black; */
+    }
+}
+
+/* 应用动画到文字类 */
+.ti1 {
+    animation-name: ti1-animation;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+/* 定义动画关键帧 */
+@keyframes ti3-animation {
+
+    0%,
+    33.33% {
+        /* 阶段1：从0秒到2秒 */
+        /* font-size: 25pt;
+        color: black; */
+        opacity: 1;
+    }
+
+    33.33%,
+    66.66% {
+        /* 阶段2：从2秒到4秒 */
+        /* font-size: 162pt;
+        color: white; */
+        opacity: 1;
+    }
+
+    66.66%,
+    99.99% {
+        /* 阶段3：从4秒到6秒 */
+        /* font-size: 25pt; */
+        /* color: black; */
+        opacity: 0;
+    }
+}
+
+/* 应用动画到文字类 */
+.ti3 {
+    animation-name: ti3-animation;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+/* 定义动画关键帧 */
+@keyframes ti4-animation {
+
+    0%,
+    33.33% {
+        /* 阶段1：从0秒到2秒 */
+        /* font-size: 25pt;
+        color: black; */
+        opacity: 0;
+    }
+
+    33.33%,
+    66.66% {
+        /* 阶段2：从2秒到4秒 */
+        /* font-size: 162pt;
+        color: white; */
+        opacity: 1;
+    }
+
+    66.66%,
+    99.99% {
+        /* 阶段3：从4秒到6秒 */
+        /* font-size: 25pt; */
+        /* color: black; */
+        opacity: 1;
+    }
+}
+
+/* 应用动画到文字类 */
+.ti4 {
+    animation-name: ti4-animation;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+/* 定义动画关键帧 */
+@keyframes ti6-animation {
+
+    0%,
+    33.33% {
+        /* 阶段1：从0秒到2秒 */
+        font-size: 25pt;
+        color: white;
+        opacity: 1;
+    }
+
+    33.33%,
+    66.66% {
+        /* 阶段2：从2秒到4秒 */
+        font-size: 58pt;
+        color: black;
+        opacity: 1;
+    }
+
+    66.66%,
+    99.99% {
+        /* 阶段3：从4秒到6秒 */
+        /* font-size: 25pt; */
+        opacity: 0;
+        /* color: black; */
+    }
+}
+
+/* 应用动画到文字类 */
+.ti6 {
+    animation-name: ti6-animation;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+/* 定义动画关键帧 */
+@keyframes ti7-animation {
+
+    0%,
+    33.33% {
+        /* 阶段1：从0秒到2秒 */
+        font-size: 25pt;
+        color: white;
+        opacity: 1;
+    }
+
+    33.33%,
+    66.66% {
+        /* 阶段2：从2秒到4秒 */
+        font-size: 60pt;
+        color: black;
+        opacity: 1;
+    }
+
+    66.66%,
+    99.99% {
+        /* 阶段3：从4秒到6秒 */
+        /* font-size: 25pt; */
+        opacity: 0;
+        /* color: black; */
+    }
+}
+
+/* 应用动画到文字类 */
+.ti7 {
+    animation-name: ti7-animation;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+/* 定义动画关键帧 */
+@keyframes ti8-animation {
+
+    0%,
+    33.33% {
+        /* 阶段1：从0秒到2秒 */
+        font-size: 25pt;
+        color: white;
+        opacity: 1;
+    }
+
+    33.33%,
+    66.66% {
+        /* 阶段2：从2秒到4秒 */
+        font-size: 32pt;
+        color: black;
+        opacity: 1;
+    }
+
+    66.66%,
+    99.99% {
+        /* 阶段3：从4秒到6秒 */
+        /* font-size: 25pt; */
+        opacity: 0;
+        /* color: black; */
+    }
+}
+
+/* 应用动画到文字类 */
+.ti8 {
+    animation-name: ti8-animation;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+/* 定义动画关键帧 */
+@keyframes ti9-animation {
+
+    0%,
+    33.33% {
+        /* 阶段1：从0秒到2秒 */
+        font-size: 25pt;
+        color: white;
+        opacity: 1;
+    }
+
+    33.33%,
+    66.66% {
+        /* 阶段2：从2秒到4秒 */
+        font-size: 52pt;
+        color: black;
+        opacity: 1;
+    }
+
+    66.66%,
+    99.99% {
+        /* 阶段3：从4秒到6秒 */
+        /* font-size: 25pt; */
+        opacity: 0;
+        /* color: black; */
+    }
+}
+
+/* 应用动画到文字类 */
+.ti9 {
+    animation-name: ti9-animation;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+/* 定义动画关键帧 */
+@keyframes ti10-animation {
+
+    0%,
+    33.33% {
+        /* 阶段1：从0秒到2秒 */
+        font-size: 25pt;
+        color: black;
+        opacity: 1;
+    }
+
+    33.33%,
+    66.66% {
+        /* 阶段2：从2秒到4秒 */
+        font-size: 162pt;
+        color: white;
+        opacity: 1;
+    }
+
+    66.66%,
+    99.99% {
+        /* 阶段3：从4秒到6秒 */
+        /* font-size: 25pt; */
+        opacity: 0;
+        /* color: black; */
+    }
+}
+
+/* 应用动画到文字类 */
+.ti10 {
+    animation-name: ti10-animation;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
